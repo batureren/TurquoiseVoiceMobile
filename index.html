@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <img class="leftLogo" src="./img/360.png" alt="" />
+      <select class="ui dropdown">
+        <option value="">Select court</option>
+        <option value="1">Court 1</option>
+        <option value="2">Court 2</option>
+      </select>
+      <img class="rightLogo" src="./img/profile_picture.png" alt="" />
+    </nav>
+
+    <div id="waitingList">
+      <p>Waiting List</p>
+      <i id="info" class="fa-solid fa-question"></i>
+      <i id="refresh" class="fa-solid fa-arrows-rotate"></i>
+    </div>
+
+    <main id="mainBorder">
+      <div id="mainBorderTop">
+        <p>Players</p>
+        <p>Waiting Time</p>
+      </div>
+
+      <div class="dark mainPlayerList border-top">
+        <div class="leftPlayers">
+          <p>Lynn Tanner</p>
+          <p>Roderick Flich</p>
+        </div>
+        <div class="rightPlayers">
+          <p>Sledge Hammer</p>
+          <p>Willie Tanner</p>
+        </div>
+        <div class="timer"><span>19</span> mins</div>
+        <i class="fa-regular fa-trash-can"></i>
+      </div>
+
+      <div class="dark border-top mainPlayerList">
+        <div class="leftPlayers">
+          <p>Angus MacGyver</p>
+          <p>Hannibal Smith</p>
+        </div>
+        <div class="rightPlayers">
+          <p>Michael Knight</p>
+          <p>Fred Decker</p>
+        </div>
+        <div class="timer"><span>19</span> mins</div>
+        <i class="fa-regular fa-trash-can"></i>
+      </div>
+
+      <div class="border-top dark mainPlayerList">
+        <div class="leftPlayers bold">
+          <p><b>Thomas Magnum</b></p>
+          <p><b>Roderick Decker</b></p>
+        </div>
+        <div class="rightPlayers">
+          <p><b>Tony Danza</b></p>
+          <p><b id="yourName">Your Name</b></p>
+        </div>
+        <div class="timer"><span>21</span> mins</div>
+        <i class="fa-regular fa-trash-can"></i>
+      </div>
+
+      <div class="border-top mainPlayerList dark">
+        <div class="leftPlayers">
+          <p>Angus MacGyver</p>
+          <p>Hannibal Smith</p>
+        </div>
+        <div class="rightPlayers">
+          <p>Michael Knight</p>
+          <p>Fred Decker</p>
+        </div>
+        <div class="timer"><span>26</span> mins</div>
+        <i class="fa-regular fa-trash-can"></i>
+      </div>
+    </main>
+
+    <div class="display">
+      <div class="backgroundWhite">
+        <p>Show other info</p>
+      </div>
+
+      <img
+        id="hideButton"
+        class="backgroundWhite noRotate"
+        src="./img/triangle.svg"
+        alt=""
+      />
+    </div>
+
+    <div id="courtMenu">
+      <div class="compass"></div>
+      <div class="court">
+        <img class="courtItems" src="./img/court.png" alt="" />
+        <img class="courtItems" src="./img/court.png" alt="" />
+        <img class="courtItems" src="./img/court.png" alt="" />
+        <img class="courtItems" src="./img/court.png" alt="" />
+      </div>
+
+      <div class="court">
+        <img class="courtItems" src="./img/court.png" alt="" />
+        <img class="courtItems" src="./img/court.png" alt="" />
+        <img class="courtItems selected" src="./img/court.png" alt="" />
+        <img class="courtItems selected" src="./img/court.png" alt="" />
+      </div>
+    </div>
+
+    <button id="addMe"><p>Add me</p></button>
+    <script src="App.js"></script>
+  </body>
+</html>

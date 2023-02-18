@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 393px;
+    height: 750px;
+    border: 1px solid rgba(0, 0, 0, 0.345);
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 393px;
+    height: 80px; 
+    background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.leftLogo{
+    width: 60px;
+    height: 60px;
+}
+
+#navbar select{
+    padding-left: 10px;
+    width: 234px;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    font-size: 14px;
+    font-weight: 400;
+    color: #3F3F3F;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("./img/down-arrow-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px 12px;
+    font-size: 24px;
+  }
+
+.rightLogo{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.fa-question{
+    position: relative;
+    right: 20px;
+    padding-top: 7px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
+    transform: rotate(-0.21deg);
+}
+.fa-arrows-rotate{
+    position: relative;
+    left: 40px;
+}
+
+#waitingList{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 16px 26px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.fa-arrows-rotate, .fa-question{
+    padding-top: 7px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
+    transform: rotate(-0.21deg);
+}
+
+#mainBorder{
+    margin: auto;
+    width: 360px;
+    background: linear-gradient(white, white) padding-box,      linear-gradient(to right, #B74534, #C95D4D) border-box;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    padding-bottom: 10px;
+}
+
+#mainBorderTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainBorder p{
+    margin: 5px 20px 5px 10px;
+    font-weight: 500;
+}
+
+.mainPlayerList{
+    display: flex;
+    align-items: center;
+}
+
+.border-top{
+    border-top: 1px solid #E4E4E4;
+}
+
+.dark:nth-child(even){
+    background-color: #F5F5F5;
+}
+
+.mainPlayerList p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.mainPlayerList span{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.fa-trash-can{
+    margin-left: 15px;
+    color:#C95D4D;
+    font-size: large;
+}
+
+.timer{
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    max-width: 75px;
+    min-width: 75px;
+}
+
+.rightPlayers{
+    max-width: 120px;
+    min-width: 120px;
+    white-space: nowrap;
+}
+
+.leftPlayers{
+    max-width: 120px;
+    min-width: 120px;
+    white-space: nowrap;
+}
+
+#yourName{
+    color: #B74534;
+}
+
+i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
+    cursor: pointer;
+}
+
+.display{
+    position: relative;
+    bottom: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 120px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.backgroundWhite{
+    background-color: white;
+}
+
+.backgroundWhite p{
+    color: #B74534;
+    text-decoration: underline;
+}
+
+.hide{
+    display: none;
+    transition: 1s;
+}
+
+.noRotate{
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+#courtMenu{
+    margin-top: -20px;
+}
+
+.court{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.court img{
+    width: 44px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px red;
+}
+
+.court .selected{
+    width: 44px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px red;
+    opacity: 0.4;
+}
+
+#addMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 359px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+
+.compass{
+    background-image: url(./img/compass.png);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    position: relative;
+    top: 20px;
+    left: 320px;
+}
