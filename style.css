@@ -52,28 +52,16 @@ select {
     border-radius: 50%;
 }
 
-.questionIcon{
-    position: relative;
-    right: 20px;
+#waitingList, #mainBorder{
     margin: auto;
-    text-align: center;
-    color: white;
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
-    transform: rotate(-0.21deg);
-}
-.refreshIcon{
-    position: relative;
-    left: 40px;
+    width: 360px;
 }
 
-#waitingList{
+.waitingList{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 15px 26px 6.2px 26px;
+    justify-content: center;
+    margin: 15px 15px 6.2px 10px;
     font-size: 18px;
     font-weight: 500;
     color: #222222;
@@ -81,6 +69,7 @@ select {
 
 .questionIcon, .refreshIcon{
     padding-top: 5px;
+    position: relative;
     margin: auto;
     text-align: center;
     color: white;
@@ -91,9 +80,21 @@ select {
     transform: rotate(-0.21deg);
 }
 
+.questionIcon{
+    right: 20px;
+    color: white;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
+    transform: rotate(-0.21deg);
+}
+
+.refreshIcon{
+    left: 45px;
+}
+
 #mainBorder{
-    margin: auto;
-    width: 360px;
     background: linear-gradient(white, white) padding-box,      linear-gradient(to right, #B74534, #C95D4D) border-box;
     border-radius: 15px;
     border: 2px solid transparent;
@@ -176,7 +177,7 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     position: relative;
     bottom: 14px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 120px;
     font-weight: 500;
     font-size: 16px;
@@ -218,6 +219,8 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
 }
 
 #courtMenu{
+    width: 360px;
+    margin: auto;
     position: relative;
     margin-top: -20px;
 }
@@ -231,7 +234,7 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
 .compass img{
     position: relative;
     top: 15px;
-    right: 15px;
+    right: 10px;
 }
 
 .court{
@@ -273,7 +276,54 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     color: white;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 768px) and (max-width: 834) {
+    #navbar select{
+        width: 400px;
+    }
+    #addMe{
+        width: 450px;
+        font-size: 18px;
+    }
+    #waitingList, #mainBorder, #courtMenu, .displayContainer{
+        margin: auto;
+        width: 550px;
+    }
+    .mainPlayerList p{
+        font-size: 15px;
+    }
+    #mainBorder{
+        padding: 10px 0px 20px 0px;
+    }
+    
+    #mainBorderTop{
+        font-size: 17px
+    }
+    .rightPlayers{
+        max-width: 210px;
+        min-width: 210px;
+    }
+    .leftPlayers{
+        max-width: 210px;
+        min-width: 210px;
+    }
+
+   .display{
+       
+        font-size: 18px;
+        justify-content: space-evenly;
+    }
+    
+    .court img, .court .selected{
+        width: 90px;
+    }
+    .compass img{
+        width: 70px;
+        top: 15px;
+        right: 0px;
+    }
+    }
+
+@media only screen and (min-width: 360px) and (max-width: 767px){
     #navbar select{
             width: 204px;
     }
@@ -289,19 +339,14 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 359px){
     #addMe{
             width: 250px;
     }
-    #mainBorder{
-        width: 320px;
-    }
     .compass img{
-        top: -5px;
-        right: 5px;
-    }
-    .mainPlayerList p{
-        font-size: 10px;
+        width: 42px;
+        top: 9px;
+        right: 0px;
     }
     .mainPlayerList p{
         font-size: 10px;
@@ -315,17 +360,16 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     .rightPlayers{
         max-width: 112px;
         min-width: 112px;
-        white-space: nowrap;
-        color: #414141;
     }
     
     .leftPlayers{
         max-width: 112px;
         min-width: 112px;
-        white-space: nowrap;
-        color: #414141;
     }
     .trashCan{
         margin-left: 0px;
+    }
+    #courtMenu, #waitingList, #mainBorder{
+        width: 320px;
     }
 }
