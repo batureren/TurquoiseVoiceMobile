@@ -3,7 +3,7 @@ const hide = document.getElementById("hideButton")
 const hidePlayers = document.querySelectorAll(".mainPlayerList")
 const refresh = document.getElementById("refresh")
 const info = document.getElementById("info")
-const remove = document.querySelectorAll(".fa-trash-can")
+const remove = document.querySelectorAll(".trashCan")
 const addMe = document.getElementById("addMe")
 const courtSelect = document.querySelectorAll(".courtItems")
 

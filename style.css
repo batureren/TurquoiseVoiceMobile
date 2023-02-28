@@ -8,25 +8,19 @@
 body{
     margin-left: auto;
     margin-right: auto;
-    max-width: 393px;
     height: 750px;
-    border: 1px solid rgba(0, 0, 0, 0.345);
 }
 
 #navbar{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 393px;
-    height: 80px; 
+    height: 63px; 
     background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
     border-radius: 0px 0px 15px 15px;
 }
 
-.leftLogo{
-    width: 60px;
-    height: 60px;
-}
 
 #navbar select{
     padding-left: 10px;
@@ -44,7 +38,7 @@ select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url("./img/down-arrow-svgrepo-com.svg");
+    background-image: url("./img/down-arrow-dropdown.svg");
     background-repeat: no-repeat;
     background-position: right 8px center;
     background-size: 12px 12px;
@@ -52,16 +46,15 @@ select {
   }
 
 .rightLogo{
-    width: 50px;
-    height: 50px;
+    width: 38px;
+    height: 38px;
     border: 2px solid white;
     border-radius: 50%;
 }
 
-.fa-question{
+.questionIcon{
     position: relative;
     right: 20px;
-    padding-top: 7px;
     margin: auto;
     text-align: center;
     color: white;
@@ -71,7 +64,7 @@ select {
     background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
     transform: rotate(-0.21deg);
 }
-.fa-arrows-rotate{
+.refreshIcon{
     position: relative;
     left: 40px;
 }
@@ -80,13 +73,14 @@ select {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 16px 26px;
+    margin: 15px 26px 6.2px 26px;
     font-size: 18px;
     font-weight: 500;
+    color: #222222;
 }
 
-.fa-arrows-rotate, .fa-question{
-    padding-top: 7px;
+.questionIcon, .refreshIcon{
+    padding-top: 5px;
     margin: auto;
     text-align: center;
     color: white;
@@ -103,12 +97,13 @@ select {
     background: linear-gradient(white, white) padding-box,      linear-gradient(to right, #B74534, #C95D4D) border-box;
     border-radius: 15px;
     border: 2px solid transparent;
-    padding-bottom: 10px;
+    padding: 5px 0px 10px 0px;
 }
 
 #mainBorderTop{
     display: flex;
     justify-content: space-between;
+    color: #222222;
 }
 
 #mainBorder p{
@@ -140,7 +135,7 @@ select {
     font-size: 16px;
 }
 
-.fa-trash-can{
+.trashCan{
     margin-left: 15px;
     color:#C95D4D;
     font-size: large;
@@ -152,20 +147,23 @@ select {
     font-size: 12px;
     max-width: 75px;
     min-width: 75px;
+    color: #414141;
 }
 
 .rightPlayers{
-    max-width: 120px;
-    min-width: 120px;
+    max-width: 122px;
+    min-width: 122px;
     white-space: nowrap;
+    color: #414141;
 }
 
 .leftPlayers{
-    max-width: 120px;
-    min-width: 120px;
+    max-width: 122px;
+    min-width: 122px;
     white-space: nowrap;
+    color: #414141;
 }
-
+    
 #yourName{
     color: #B74534;
 }
@@ -182,10 +180,21 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     gap: 120px;
     font-weight: 500;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .backgroundWhite{
     background-color: white;
+}
+
+.bgWhiteSize-50{
+    text-align: center;
+    width: 37px;
+}
+
+.bgWhiteSize-142{
+    text-align: center;
+    width: 142px;
 }
 
 .backgroundWhite p{
@@ -209,7 +218,20 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
 }
 
 #courtMenu{
+    position: relative;
     margin-top: -20px;
+}
+
+.compass{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.compass img{
+    position: relative;
+    top: 15px;
+    right: 15px;
 }
 
 .court{
@@ -221,6 +243,10 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
 
 .court img{
     width: 44px;
+    border-right:3px solid white;
+    border-left: 3px solid white;
+    border-top:2.5px solid white;
+    border-bottom:2.5px solid white;
     border-radius: 5px;
     box-shadow: 0px 0px 4px red;
 }
@@ -247,12 +273,59 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     color: white;
 }
 
-.compass{
-    background-image: url(./img/compass.png);
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    position: relative;
-    top: 20px;
-    left: 320px;
+@media only screen and (max-width: 360px) {
+    #navbar select{
+            width: 204px;
+    }
+    .compass img{
+        top: 10px;
+        right: 5px;
+    }
+    .mainPlayerList p{
+        font-size: 11px;
+    }
+    #mainBorderTop{
+        font-size: 13px
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #addMe{
+            width: 250px;
+    }
+    #mainBorder{
+        width: 320px;
+    }
+    .compass img{
+        top: -5px;
+        right: 5px;
+    }
+    .mainPlayerList p{
+        font-size: 10px;
+    }
+    .mainPlayerList p{
+        font-size: 10px;
+    }
+    #mainBorderTop{
+        font-size: 12px
+    }
+    .timer{
+        padding-left: 10px;
+    }
+    .rightPlayers{
+        max-width: 112px;
+        min-width: 112px;
+        white-space: nowrap;
+        color: #414141;
+    }
+    
+    .leftPlayers{
+        max-width: 112px;
+        min-width: 112px;
+        white-space: nowrap;
+        color: #414141;
+    }
+    .trashCan{
+        margin-left: 0px;
+    }
 }

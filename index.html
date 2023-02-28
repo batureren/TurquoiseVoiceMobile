@@ -4,23 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Turquoise Voice</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <nav id="navbar">
-      <img class="leftLogo" src="./img/360.png" alt="" />
+      <img class="leftLogo" src="./img/icons/360.svg" alt="" />
       <select class="ui dropdown">
         <option value="">Select court</option>
         <option value="1">Court 1</option>
@@ -31,8 +24,12 @@
 
     <div id="waitingList">
       <p>Waiting List</p>
-      <i id="info" class="fa-solid fa-question"></i>
-      <i id="refresh" class="fa-solid fa-arrows-rotate"></i>
+      <i id="info" class="questionIcon"
+        ><img src="./img/icons/question-mark.svg" alt=""
+      /></i>
+      <i id="refresh" class="refreshIcon"
+        ><img src="./img/icons/refresh.svg" alt=""
+      /></i>
     </div>
 
     <main id="mainBorder">
@@ -51,7 +48,7 @@
           <p>Willie Tanner</p>
         </div>
         <div class="timer"><span>19</span> mins</div>
-        <i class="fa-regular fa-trash-can"></i>
+        <i class="trashCan"><img src="./img/icons/trash-can.svg" alt="" /></i>
       </div>
 
       <div class="dark border-top mainPlayerList">
@@ -64,7 +61,7 @@
           <p>Fred Decker</p>
         </div>
         <div class="timer"><span>19</span> mins</div>
-        <i class="fa-regular fa-trash-can"></i>
+        <i class="trashCan"><img src="./img/icons/trash-can.svg" alt="" /></i>
       </div>
 
       <div class="border-top dark mainPlayerList">
@@ -77,7 +74,7 @@
           <p><b id="yourName">Your Name</b></p>
         </div>
         <div class="timer"><span>21</span> mins</div>
-        <i class="fa-regular fa-trash-can"></i>
+        <i class="trashCan"><img src="./img/icons/trash-can.svg" alt="" /></i>
       </div>
 
       <div class="border-top mainPlayerList dark">
@@ -90,37 +87,41 @@
           <p>Fred Decker</p>
         </div>
         <div class="timer"><span>26</span> mins</div>
-        <i class="fa-regular fa-trash-can"></i>
+        <i class="trashCan"><img src="./img/icons/trash-can.svg" alt="" /></i>
       </div>
     </main>
 
     <div class="display">
-      <div class="backgroundWhite">
+      <div class="backgroundWhite bgWhiteSize-142">
         <p>Show other info</p>
       </div>
 
-      <img
-        id="hideButton"
-        class="backgroundWhite noRotate"
-        src="./img/triangle.svg"
-        alt=""
-      />
+      <div class="backgroundWhite bgWhiteSize-50">
+        <img
+          id="hideButton"
+          class="noRotate"
+          src="./img/icons/triangle.svg"
+          alt=""
+        />
+      </div>
     </div>
 
-    <div id="courtMenu">
-      <div class="compass"></div>
+    <div id="courtMenu" class="topPadding">
+      <div class="compass">
+        <img class="courtItems" src="./img/icons/Compass.svg" alt="" />
+      </div>
       <div class="court">
-        <img class="courtItems" src="./img/court.png" alt="" />
-        <img class="courtItems" src="./img/court.png" alt="" />
-        <img class="courtItems" src="./img/court.png" alt="" />
-        <img class="courtItems" src="./img/court.png" alt="" />
+        <img class="courtItems" src="./img/icons/court.svg" alt="" />
+        <img class="courtItems" src="./img/icons/court.svg" alt="" />
+        <img class="courtItems" src="./img/icons/court.svg" alt="" />
+        <img class="courtItems" src="./img/icons/court.svg" alt="" />
       </div>
 
       <div class="court">
-        <img class="courtItems" src="./img/court.png" alt="" />
-        <img class="courtItems" src="./img/court.png" alt="" />
-        <img class="courtItems selected" src="./img/court.png" alt="" />
-        <img class="courtItems selected" src="./img/court.png" alt="" />
+        <img class="courtItems" src="./img/icons/court.svg" alt="" />
+        <img class="courtItems" src="./img/icons/court.svg" alt="" />
+        <img class="courtItems selected" src="./img/icons/court.svg" alt="" />
+        <img class="courtItems selected" src="./img/icons/court.svg" alt="" />
       </div>
     </div>
 
