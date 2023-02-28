@@ -8,8 +8,9 @@
 body{
     margin-left: auto;
     margin-right: auto;
-    height: 750px;
 }
+
+/* Navbar */
 
 #navbar{
     width: 100%;
@@ -51,6 +52,8 @@ select {
     border: 2px solid white;
     border-radius: 50%;
 }
+
+/* Main Border */
 
 #waitingList, #mainBorder{
     margin: auto;
@@ -112,6 +115,38 @@ select {
     font-weight: 500;
 }
 
+#mainBorder article .announcementBackground{
+    color: black;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 5px 0px;
+    padding: 5px 10px;
+    margin-top: 0px;
+    }
+
+
+.announcementBackground{
+    background-color: #FFDCD1;
+}
+
+#announcementDate{
+    position: relative;
+    top: 5px;
+    color: 
+    #393939;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#datePostedHours span{
+    font-size: 8px;
+    font-weight: 300;
+}
+
 .mainPlayerList{
     display: flex;
     align-items: center;
@@ -139,7 +174,6 @@ select {
 .trashCan{
     margin-left: 15px;
     color:#C95D4D;
-    font-size: large;
 }
 
 .timer{
@@ -173,6 +207,8 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     cursor: pointer;
 }
 
+/* Display */
+
 .display{
     position: relative;
     bottom: 14px;
@@ -203,10 +239,12 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     text-decoration: underline;
 }
 
+/* Hide Elements */
 .hide{
-    display: none;
+    display: none !important;
     transition: 1s;
 }
+/* Hide Elements */
 
 .noRotate{
     transform: rotate(0deg);
@@ -217,6 +255,8 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     transform: rotate(180deg);
     transition: 1s;
 }
+
+/* Court Menu */
 
 #courtMenu{
     width: 360px;
@@ -275,6 +315,8 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     border: none;
     color: white;
 }
+
+/* Responsive */
 
 @media only screen and (min-width: 768px) and (max-width: 834) {
     #navbar select{
@@ -341,7 +383,7 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
 
 @media only screen and (min-width: 320px) and (max-width: 359px){
     #addMe{
-            width: 250px;
+        width: 250px;
     }
     .compass img{
         width: 42px;
