@@ -577,6 +577,7 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
         width: 52px;
         top: 15px;
         right: 0px;
+        max-width: 100%;
     }
     }
 /*! Mobile*/
@@ -592,6 +593,7 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
         justify-content: flex-end;
         top: 10px;
         right: 5px;
+        max-width: 100%;
     }
     .mainPlayerList p{
         font-size: 11px;
@@ -626,6 +628,7 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
         width: 42px;
         top: 9px;
         right: 0px;
+        max-width: 100%;
     }
     .mainPlayerList p{
         font-size: 10px;
