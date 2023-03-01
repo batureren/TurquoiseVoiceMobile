@@ -117,11 +117,11 @@ if (addedPlayers.childElementCount === 8){
 }
 }
 
-//Disable Right Click
+//! Disable Right Click
 
-document.addEventListener("contextmenu", function(e){
-    e.preventDefault();
-}, false);
+// document.addEventListener("contextmenu", function(e){
+//     e.preventDefault();
+// }, false);
 
 //Desktop Reponsive Add Me Button
 
