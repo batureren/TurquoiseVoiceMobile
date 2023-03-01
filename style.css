@@ -249,7 +249,7 @@ select {
     color: #B74534;
 }
 
-i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
+i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover, .courtsContent:hover{
     cursor: pointer;
 }
 
