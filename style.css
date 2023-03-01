@@ -313,13 +313,13 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
 
 .compass{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     position: relative;
 }
 
 .compass img{
     position: relative;
-    justify-content: end;
+    justify-content: flex-end;
     top: 15px;
     right: 10px;
 }
@@ -573,7 +573,7 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
         width: 90px;
     }
     .compass img{
-        justify-content: end;
+        justify-content: flex-end;
         width: 52px;
         top: 15px;
         right: 0px;
@@ -589,7 +589,7 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     }
     .compass img{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         top: 10px;
         right: 5px;
     }
@@ -622,7 +622,7 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
     }
     .compass img{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         width: 42px;
         top: 9px;
         right: 0px;
