@@ -416,7 +416,7 @@ i:hover, #addMe:hover, .backgroundWhite:hover, .court img:hover{
         font-size: 24px;
     }
 
-    #navbar, #waitingList, .displayContainer, .trashCan, .courtItems, #mainBorderTop {
+    #navbar, #waitingList, .displayContainer, .trashCan, .courtItems, #mainBorderTop, #announcement {
         display: none;
     }
     .desktopRightSide{
